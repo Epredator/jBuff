@@ -30,14 +30,9 @@ public class Paint extends JComponent {
 	}
 	
 	public void paintComponent(Graphics g) {
-            Graphics2D g2 = (Graphics2D) g;
-            
-            for (int i=0 ; i<10; i++){
-		g2.drawLine(0, 350, 669, 350);
-                g2.drawLine(0, 250, 669, 250);
-		g2.drawLine(0, 150, 669, 150);
-            }
-                
+		Graphics2D g2 = (Graphics2D) g;
+		g2.drawLine(0, 250, 300, 250);
+		g2.drawLine(0, 150, 300, 150);
 		int xVal = gen.nextInt(250);
 		n.drop();
 		double x2 = xVal + (Math.cos(Math.toRadians(n.angle))*100);
